@@ -1,0 +1,79 @@
+/* Base styles for the whole document */
+body {
+    font-family: Arial, sans-serif; /* Use a common, readable font */
+    line-height: 1.6; /* Improve readability */
+    margin: 0; /* Remove default body margin */
+    padding: 0;
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+}
+
+/* Header styling */
+header {
+    background-color: #007bff; /* A professional blue color */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+header h1 {
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-weight: normal;
+    font-size: 1.2em;
+}
+
+/* Section styling */
+section {
+    width: 80%; /* Set a maximum width for content */
+    margin: 20px auto; /* Center the sections */
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* Heading styles within sections */
+section h3 {
+    color: #007bff;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* List of skills styling */
+#habilidades ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+    display: flex; /* Use flexbox for a cleaner layout */
+    flex-wrap: wrap; /* Allow skills to wrap on smaller screens */
+}
+
+#habilidades li {
+    background-color: #e9ecef; /* Light gray background for skill tags */
+    color: #333;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 20px; /* Pill-shaped tags */
+    font-size: 0.9em;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: white;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #b3d9ff; /* Light color for links in the footer */
+    text-decoration: none; /* Remove underline */
+}
+
+footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
