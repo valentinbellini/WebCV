@@ -3,34 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de [Tu Nombre] - Ingeniero Electrónico</title>
+    <title> Valentin Bellini </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>[Valentin Bellini]</h1>
-        <h2>Electornic Engineer</h2>
+
+    <header class="navbar">
+        <h1>// Valentin Bellini </h1>
+        <nav>
+            <a href="#perfil"> Profile </a>
+            <a href="#proyectos"> Projects </a>
+            <a href="https://www.linkedin.com/in/valentinbellini/" target="_blank" class="linkedin-btn">LinkedIn</a>
+        </nav>
     </header>
 
-    <section id="perfil">
-        <h3>Perfil Profesional</h3>
-        <p>Ingeniero con amplia experiencia en el diseño e implementación de sistemas de control y automatización. Sólidos conocimientos en PLC, SCADA, y tecnologías emergentes como Análisis de Datos y Machine Learning aplicadas a procesos industriales.</p>
+    <section id="perfil" class="container">
+        <h2>ABOUT ME</h2>
+        <p>I’m Valentin, a curious and practical engineer motivated by understanding how systems work and applying technology to improve processes. I hold EU (Spanish) and Argentine citizenship and am currently based in Lugano, Switzerland, with full availability to relocate and a strong commitment to learning local languages. </p>
+        <P> My experience involves: </P>
+        <div class="stats-grid">
+            <div class="stat-item"><span>Automation</span> PLC Programming, HMI & SCADA Design. +2 years experience with Siemens TIA PORTAL, programming S7-300, S7-400, S7-1200 and S7-1500 PLC's.</div>
+            <div class="stat-item"><span>Data Analyst</span> Python, Spreadsheets, SQL, Tableau. Google Data Analyst Certificated. I also took courses at University on Machine Learning and SQL.</div>
+            <div class="stat-item"><span>Embedded Systems</span> Experience programming microcontrollers in C (KL43Z, KL46Z), IOT projects and low level programming.</div>
+        </div>
     </section>
 
-    <section id="habilidades">
-        <h3>Habilidades Clave</h3>
-        <ul>
-            <li>Automatización Industrial (PLC, HMI, SCADA)</li>
-            <li>Robótica y Sistemas de Visión</li>
-            <li>Análisis de Datos (Python, R, Pandas)</li>
-            <li>Machine Learning aplicado a la Industria</li>
-            <li>Diseño de Circuitos y Microcontroladores</li>
-        </ul>
+    <section id="proyectos" class="container">
+        <h2>Proyectos Destacados</h2>
+        
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">ALL</button>
+            <button class="filter-btn" data-filter="automation">INDUSTRIAL AUTOMATION</button>
+            <button class="filter-btn" data-filter="data">DATA ANALYSIS / ML</button>
+            <button class="filter-btn" data-filter="electronics">EMBEDDED SYSTEMS</button>
+        </div>
+
+        <div class="project-grid">
+            <div class="project-card" data-category="automation">
+                <h3>Control de Línea de Producción</h3>
+                <p>Implementación de un PLC Siemens S7-1500 y desarrollo de HMI para monitoreo en tiempo real. Reducción del 15% en tiempo de inactividad.</p>
+                <span class="category-tag">Automation</span>
+            </div>
+
+            <div class="project-card" data-category="automation">
+                <h3>Control de Línea de Producción</h3>
+                <p>Implementación de un PLC Siemens S7-1500 y desarrollo de HMI para monitoreo en tiempo real. Reducción del 15% en tiempo de inactividad.</p>
+                <span class="category-tag">Automation</span>
+            </div>
+
+            <div class="project-card" data-category="automation">
+                <h3>Control de Línea de Producción</h3>
+                <p>Implementación de un PLC Siemens S7-1500 y desarrollo de HMI para monitoreo en tiempo real. Reducción del 15% en tiempo de inactividad.</p>
+                <span class="category-tag">Automation</span>
+            </div>
+            
+            <div class="project-card" data-category="data">
+                <h3>ML para Mantenimiento Predictivo</h3>
+                <p>Modelo de regresión basado en Python y Scikit-learn para predecir fallas en bombas industriales 48 horas antes de su ocurrencia.</p>
+                <span class="category-tag">Data / ML</span>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <h3>ML para Mantenimiento Predictivo</h3>
+                <p>Modelo de regresión basado en Python y Scikit-learn para predecir fallas en bombas industriales 48 horas antes de su ocurrencia.</p>
+                <span class="category-tag">Data / ML</span>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <h3>ML para Mantenimiento Predictivo</h3>
+                <p>Modelo de regresión basado en Python y Scikit-learn para predecir fallas en bombas industriales 48 horas antes de su ocurrencia.</p>
+                <span class="category-tag">Data / ML</span>
+            </div>
+
+            </div>
     </section>
 
     <footer>
-        <p>Contacto: <a href="mailto:tu.email@example.com">tu.email@example.com</a> | <a href="https://linkedin.com/in/tucuenta" target="_blank">LinkedIn</a></p>
+        <p>© 2025 Valentin Bellini | Code & Automation</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
