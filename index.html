@@ -13,6 +13,7 @@
         <nav>
             <a href="#perfil"> Profile </a>
             <a href="#proyectos"> Projects </a>
+            <a href="assets/CV.pdf" target="_blank" download class="cv-btn">CV (PDF)</a>
             <a href="https://www.linkedin.com/in/valentinbellini/" target="_blank" class="linkedin-btn">LinkedIn</a>
         </nav>
     </header>
@@ -39,45 +40,73 @@
         </div>
 
         <div class="project-grid">
-            <div class="project-card" data-category="automation">
-                <h3>Control de Línea de Producción</h3>
-                <p>Implementación de un PLC Siemens S7-1500 y desarrollo de HMI para monitoreo en tiempo real. Reducción del 15% en tiempo de inactividad.</p>
-                <span class="category-tag">Automation</span>
+
+            <div class="project-card" data-category="data">
+                <img src="assets/imgs/AgriculturaArgentina.jpg" alt="Imagen de Dashboard en Tableu" class="project-img">
+                <h3>Agriculture in Argentina</h3>
+                <p>
+                    This project presents an analysis based on public government data regarding the planting, 
+                    harvesting, production, and yields of the main grains in Argentina (Corn, Soy, and Wheat). 
+                    The information is sourced from three distinct datasets provided by the official 
+                    Argentine data portal.
+                    You can check <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/AgriculturaArgentina/README_EN.md" target="_blank" class="github-link">GitHub</a> code or
+                    directly the <a href="https://public.tableau.com/shared/W4DGPJW7S?:display_count=n&:origin=viz_share_link" target="_blank" class="github-link">Tableu Public Interface</a>
+                </p>
+                <span class="category-tag">Data</span>
             </div>
 
-            <div class="project-card" data-category="automation">
-                <h3>Control de Línea de Producción</h3>
-                <p>Implementación de un PLC Siemens S7-1500 y desarrollo de HMI para monitoreo en tiempo real. Reducción del 15% en tiempo de inactividad.</p>
-                <span class="category-tag">Automation</span>
-            </div>
+            <div class="project-card" data-category="data">
+                <img src="assets/imgs/Finance-Dashboard.jpg" alt="Imagen de Dashboard en google sheets" class="project-img">
+                <h3>Finance Portfolio Tracker</h3>
+                <p> 
+                    This project is built in Google Sheets, leveraging Google Finance functions and 
+                    SQL queries for data transformation. It tracks investment operations (stocks, crypto, commodities, etc.) 
+                    and generates a dynamic dashboard for performance monitoring.
+                    You can access to the <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/FinancePortfolioTracker/README.md" target="_blank" class="github-link">GitHub</a> to check the spreadsheet.
+                </p>
+                <span class="category-tag">Data</span>
+            </div>
 
-            <div class="project-card" data-category="automation">
-                <h3>Control de Línea de Producción</h3>
-                <p>Implementación de un PLC Siemens S7-1500 y desarrollo de HMI para monitoreo en tiempo real. Reducción del 15% en tiempo de inactividad.</p>
-                <span class="category-tag">Automation</span>
-            </div>
+            <div class="project-card" data-category="data">
+                <img src="assets/imgs/ESP32-Arduino.png" alt="Imagen de Alexa-ESP32" class="project-img">
+                <h3> ALEXA-ESP32 </h3>
+                <p> 
+                    This project allows you to control devices using voice commands through Alexa, 
+                    using an Arduino microcontroller (either ESP32 or ESP8266) and the FauxmoESP library.
+                    You can access to the <a href="https://github.com/valentinbellini/Alexa-ESP32" target="_blank" class="github-link">GitHub</a> to check the code.
+                </p>
+                <span class="category-tag">Data</span>
+            </div>
             
             <div class="project-card" data-category="data">
-                <h3>ML para Mantenimiento Predictivo</h3>
-                <p>Modelo de regresión basado en Python y Scikit-learn para predecir fallas en bombas industriales 48 horas antes de su ocurrencia.</p>
-                <span class="category-tag">Data / ML</span>
-            </div>
+                <img src="assets/imgs/inventarioSQL.jpg" alt="Imagen de Inventario SQL" class="project-img">
+                <h3>SQL Inventory</h3>
+                <p> 
+                    This is a Python project that provides a graphical interface to manage product inventories. 
+                    It allows you to add, modify, delete, and display products stored in an SQLite database.
+                    Here is the link to <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank" class="github-link">GitHub</a> 
+                    but I just want to let you know that the entire description is in Spanish.
+                </p>
+                <span class="category-tag">Data</span>
+            </div>
 
             <div class="project-card" data-category="data">
-                <h3>ML para Mantenimiento Predictivo</h3>
-                <p>Modelo de regresión basado en Python y Scikit-learn para predecir fallas en bombas industriales 48 horas antes de su ocurrencia.</p>
-                <span class="category-tag">Data / ML</span>
-            </div>
+                <img src="assets/imgs/debug_h.jpg" alt="Imagen de programacion en microcontrolador" class="project-img">
+                <h3>RS485 with DMA in FRDM-KL46Z</h3>
+                <p> 
+                    Using the Cortex M0+ microcontroller on the FRDM-KL46Z development board in order to establish RS-485 serial 
+                    communication with another device. The system's operation is modeled using the Finite State Machine / UML Statecharts 
+                    formalism. The message exchange between the two devices is implemented using circular queue data structures for 
+                    reception and DMA-handled transactions for transmission. The application was programmed and debugged using 
+                    the MCUXpresso environment and the associated libraries.
+                    Here is the link to <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank" class="github-link">GitHub</a> 
+                </p>
+                <span class="category-tag">Data</span>
+            </div>
+   
+        </div>
 
-            <div class="project-card" data-category="data">
-                <h3>ML para Mantenimiento Predictivo</h3>
-                <p>Modelo de regresión basado en Python y Scikit-learn para predecir fallas en bombas industriales 48 horas antes de su ocurrencia.</p>
-                <span class="category-tag">Data / ML</span>
-            </div>
-
-            </div>
     </section>
-
     <footer>
         <p>© 2025 Valentin Bellini | Code & Automation</p>
     </footer>

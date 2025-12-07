@@ -24,6 +24,7 @@
         display: flex;
         flex-direction: column; /* Stack links vertically */
         width: 100%;
+        align-items: center;
     }
 
     .navbar a {
@@ -60,6 +61,13 @@
     .filter-btn {
         font-size: 0.8em;
         padding: 6px 10px;
+    }
+
+    .cv-btn, .linkedin-btn {
+        /* Give full width on mobile for better touch target */
+        width: 80%; 
+        text-align: center;
+        margin: 5px 0; /* Add margin to separate stacked buttons */
     }
 }
 
@@ -113,6 +121,36 @@ body {
     padding: 5px 10px;
     border-radius: 4px;
     font-weight: bold;
+}
+
+/* Styling for the new CV Download Button in the header */
+.cv-btn {
+    /* Use the accent color for prominence */
+    background-color: var(--accent-color); 
+    color: var(--bg-dark) !important; /* Dark text for contrast */
+    padding: 8px 15px;
+    margin-right: 15px; /* Spacing between CV button and LinkedIn button */
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cv-btn:hover {
+    background-color: var(--link-color); /* Slightly different neon on hover */
+    color: white !important;
+    transform: scale(1.05); /* Slight scale effect */
+}
+
+/* Project Card Image Styling */
+.project-img {
+    width: 100%; /* Image takes full width of the card */
+    height: auto;
+    max-height: 200px; /* Limit the maximum height to keep cards uniform */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-bottom: 1px solid var(--accent-color); /* Neon line separator */
+    margin-bottom: 15px;
+    display: block; /* Remove any inline spacing issues */
 }
 
 /* Headings */
@@ -181,7 +219,7 @@ h2 {
     border: 1px solid #333;
     transition: transform 0.3s, box-shadow 0.3s;
     /* Initial state for JS filtering */
-    display: block; 
+    display: block;
 }
 
 .project-card:hover {
@@ -201,6 +239,7 @@ h2 {
     padding: 2px 8px;
     font-size: 0.8em;
     margin-top: 10px;
+    text-align: center;
 }
 
 /* Footer */
