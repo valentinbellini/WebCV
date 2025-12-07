@@ -15,6 +15,7 @@
             <a href="#proyectos"> Projects </a>
             <a href="assets/CV.pdf" target="_blank" download class="cv-btn">CV (PDF)</a>
             <a href="https://www.linkedin.com/in/valentinbellini/" target="_blank" class="linkedin-btn">LinkedIn</a>
+            <a href="https://github.com/valentinbellini" target="_blank" class="linkedin-btn">GitHub</a>
         </nav>
     </header>
 
@@ -23,20 +24,31 @@
         <p>I’m Valentin, a curious and practical engineer motivated by understanding how systems work and applying technology to improve processes. I hold EU (Spanish) and Argentine citizenship and am currently based in Lugano, Switzerland, with full availability to relocate and a strong commitment to learning local languages. </p>
         <P> My experience involves: </P>
         <div class="stats-grid">
-            <div class="stat-item"><span>Automation</span> PLC Programming, HMI & SCADA Design. +2 years experience with Siemens TIA PORTAL, programming S7-300, S7-400, S7-1200 and S7-1500 PLC's.</div>
+            <div class="stat-item"><span>Automation</span> PLC Programming, HMI & SCADA Design. +2 years experience with Siemens TIA PORTAL, programming S7-300, S7-400, S7-1200 and S7-1500 PLC's. All details at my CV or LinkedIn.</div>
             <div class="stat-item"><span>Data Analyst</span> Python, Spreadsheets, SQL, Tableau. Google Data Analyst Certificated. I also took courses at University on Machine Learning and SQL.</div>
-            <div class="stat-item"><span>Embedded Systems</span> Experience programming microcontrollers in C (KL43Z, KL46Z), IOT projects and low level programming.</div>
+            <div class="stat-item"><span>Embedded Systems</span> Experience programming microcontrollers in C (KL43Z, KL46Z), IOT projects and control systems with Matlab.</div>
         </div>
     </section>
 
+    <div class="tech-stack-divider">
+        <img src="assets/icons/OIP.jpeg" alt="TIA PORTAL" title="TIA PORTAL" class="tech-icon">
+        <img src="assets/icons/icons8-c-programming-48.png" alt="C" title="C programming" class="tech-icon">
+        <img src="assets/icons/icons8-github-48.png" alt="Github" title="Github" class="tech-icon">
+        <img src="assets/icons/icons8-matlab-48.png" alt="Matlab" title="Matlab" class="tech-icon">
+        <img src="assets/icons/icons8-python-48.png" alt="Python" title="Python" class="tech-icon">
+        <img src="assets/icons/icons8-r-project-48.png" alt="R" title="R" class="tech-icon">
+        <img src="assets/icons/icons8-jupyter-48.png" alt="Jupyter Notebooks" title="Jupyter Notebooks" class="tech-icon">
+        <img src="assets/icons/icons8-sqlite-100.png" alt="SQLite" title="SQLite" class="tech-icon">
+        <img src="assets/icons/icons8-tableau-software-48.png" alt="Tableau" title="Tableau" class="tech-icon">
+    </div>
+
     <section id="proyectos" class="container">
-        <h2>Proyectos Destacados</h2>
+        <h2>Projects</h2>
         
         <div class="filters">
             <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="automation">INDUSTRIAL AUTOMATION</button>
             <button class="filter-btn" data-filter="data">DATA ANALYSIS / ML</button>
-            <button class="filter-btn" data-filter="electronics">EMBEDDED SYSTEMS</button>
+            <button class="filter-btn" data-filter="Programming">PROGRAMMING</button>
         </div>
 
         <div class="project-grid">
@@ -67,7 +79,7 @@
                 <span class="category-tag">Data</span>
             </div>
 
-            <div class="project-card" data-category="data">
+            <div class="project-card" data-category="Programming">
                 <img src="assets/imgs/ESP32-Arduino.png" alt="Imagen de Alexa-ESP32" class="project-img">
                 <h3> ALEXA-ESP32 </h3>
                 <p> 
@@ -75,7 +87,7 @@
                     using an Arduino microcontroller (either ESP32 or ESP8266) and the FauxmoESP library.
                     You can access to the <a href="https://github.com/valentinbellini/Alexa-ESP32" target="_blank" class="github-link">GitHub</a> to check the code.
                 </p>
-                <span class="category-tag">Data</span>
+                <span class="category-tag">Programming</span>
             </div>
             
             <div class="project-card" data-category="data">
@@ -90,7 +102,7 @@
                 <span class="category-tag">Data</span>
             </div>
 
-            <div class="project-card" data-category="data">
+            <div class="project-card" data-category="Programming">
                 <img src="assets/imgs/debug_h.jpg" alt="Imagen de programacion en microcontrolador" class="project-img">
                 <h3>RS485 with DMA in FRDM-KL46Z</h3>
                 <p> 
@@ -101,7 +113,19 @@
                     the MCUXpresso environment and the associated libraries.
                     Here is the link to <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank" class="github-link">GitHub</a> 
                 </p>
-                <span class="category-tag">Data</span>
+                <span class="category-tag">Programming</span>
+            </div>
+
+            <div class="project-card" data-category="Programming">
+                <img src="assets/imgs/ControlTheory.jpg" alt="Imagen de control loop" class="project-img">
+                <h3>Control Theory</h3>
+                <p> 
+                    This repository gathers a collection of practical assignments from university courses 
+                    related to Control Systems, System Dynamics, and Signal Analysis using MatLab and Modelica for
+                    design, tunning and report several control systems.
+                    Here is the link to <a href="https://github.com/valentinbellini/Simulacion-Sistemas-Fisicos" target="_blank" class="github-link">GitHub</a>.
+                </p>
+                <span class="category-tag">Programming</span>
             </div>
    
         </div>
