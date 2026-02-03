@@ -1,44 +1,66 @@
-// Function to handle project filtering based on category
-function filterProjects(category) {
-    // Select all project cards
-    const projectCards = document.querySelectorAll('.project-card');
+document.addEventListener('DOMContentLoaded', () => {
     
-    // Iterate over each card
-    projectCards.forEach(card => {
-        // Get the category data attribute from the card
-        const cardCategory = card.getAttribute('data-category');
-        
-        // Check if the current category is 'all' OR if the card's category matches the filter category
-        if (category === 'all' || cardCategory === category) {
-            // If it matches, make sure the card is visible
-            card.classList.remove('hidden');
-        } else {
-            // If it doesn't match, hide the card
-            card.classList.add('hidden');
-        }
-    });
-}
-
-// Function to attach event listeners to filter buttons
-function setupFilterListeners() {
-    // Select all filter buttons
+    // --- LÓGICA DE FILTRADO DE PROYECTOS ---
     const filterButtons = document.querySelectorAll('.filter-btn');
-    
-    // Attach a click event listener to each button
+    const projectCards = document.querySelectorAll('.project-card');
+
     filterButtons.forEach(button => {
         button.addEventListener('click', () => {
-            // 1. Get the filter value (e.g., 'automation', 'data')
-            const filterValue = button.getAttribute('data-filter');
-            
-            // 2. Perform the filtering operation
-            filterProjects(filterValue);
-            
-            // 3. Update the 'active' class for visual feedback
+            // Actualizar clase activa visualmente
             filterButtons.forEach(btn => btn.classList.remove('active'));
             button.classList.add('active');
+
+            const filterValue = button.getAttribute('data-filter');
+
+            projectCards.forEach(card => {
+                const cardCategory = card.getAttribute('data-category');
+                
+                if (filterValue === 'all' || cardCategory === filterValue) {
+                    card.classList.remove('hidden');
+                    // Pequeña animación de entrada (opcional)
+                    card.style.opacity = '0';
+                    setTimeout(() => card.style.opacity = '1', 50);
+                } else {
+                    card.classList.add('hidden');
+                }
+            });
         });
     });
-}
 
-// Run the setup function once the document is fully loaded
-document.addEventListener('DOMContentLoaded', setupFilterListeners);
+    // --- LÓGICA DE MODO CLARO / OSCURO ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+    const icon = themeToggle.querySelector('i');
+
+    // 1. Revisar si hay una preferencia guardada en el navegador
+    const savedTheme = localStorage.getItem('theme');
+    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    if (savedTheme) {
+        htmlElement.setAttribute('data-theme', savedTheme);
+        updateIcon(savedTheme);
+    } else if (prefersDark) {
+        htmlElement.setAttribute('data-theme', 'dark');
+        updateIcon('dark');
+    }
+
+    // 2. Evento Click
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = htmlElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+        
+        htmlElement.setAttribute('data-theme', newTheme);
+        localStorage.setItem('theme', newTheme); // Guardar preferencia
+        updateIcon(newTheme);
+    });
+
+    function updateIcon(theme) {
+        if (theme === 'dark') {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun'); // Mostrar sol para cambiar a claro
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon'); // Mostrar luna para cambiar a oscuro
+        }
+    }
+});

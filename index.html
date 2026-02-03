@@ -1,151 +1,202 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Valentin Bellini </title>
+    <title>Valentin Bellini | Electronic Engineer</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <h1>// Valentin Bellini </h1>
-        <nav>
-            <a href="#perfil"> Profile </a>
-            <a href="#proyectos"> Projects </a>
-            <a href="assets/CV.pdf" target="_blank" download class="cv-btn">CV (PDF)</a>
-            <a href="https://www.linkedin.com/in/valentinbellini/" target="_blank" class="linkedin-btn">LinkedIn</a>
-            <a href="https://github.com/valentinbellini" target="_blank" class="linkedin-btn">GitHub</a>
-        </nav>
+    <nav class="navbar">
+        <div class="nav-content">
+            <a href="#" class="logo">VB.</a>
+            <div class="nav-links">
+                <a href="#perfil">Profile</a>
+                <a href="#proyectos">Projects</a>
+                <a href="assets/CV.pdf" target="_blank" download class="btn-primary">Download CV</a>
+                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container hero-content">
+            <span class="greeting">Hi, I am Valentin Bellini</span>
+            <h1>Electronic Engineer <br>& Data Analyst</h1>
+            <p>With experience in industrial automation (PLC), embedded systems programming, and data analytics. Based in Switzerland and fully available to relocate.</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/valentinbellini/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/valentinbellini" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
     </header>
 
-    <section id="perfil" class="container">
-        <h2>ABOUT ME</h2>
-        <p>I’m Valentin, a curious and practical engineer motivated by understanding how systems work and applying technology to improve processes. I hold EU (Spanish) and Argentine citizenship and am currently based in Lugano, Switzerland, with full availability to relocate and a strong commitment to learning local languages. </p>
-        <P> My experience involves: </P>
-        <div class="stats-grid">
-            <div class="stat-item"><span>Automation</span> PLC Programming, HMI & SCADA Design. +2 years experience with Siemens TIA PORTAL, programming S7-300, S7-400, S7-1200 and S7-1500 PLC's. All details at my CV or LinkedIn.</div>
-            <div class="stat-item"><span>Data Analyst</span> Python, Spreadsheets, SQL, Tableau. Google Data Analyst Certificated. I also took courses at University on Machine Learning and SQL.</div>
-            <div class="stat-item"><span>Embedded Systems</span> Experience programming microcontrollers in C (KL43Z, KL46Z), IOT projects and control systems with Matlab.</div>
+    <div class="tech-stack-container">
+        <p class="stack-title">Tech stack</p>
+        <div class="tech-icons">
+            <img src="assets/icons/OIP.jpeg" title="TIA Portal">
+            <img src="assets/icons/icons8-python-48.png" title="Python">
+            <img src="assets/icons/icons8-c-programming-48.png" title="C/C++">
+            <img src="assets/icons/icons8-sqlite-100.png" title="SQL"> 
+            <img src="assets/icons/icons8-tableau-software-48.png" title="Tableau">
+            <img src="assets/icons/icons8-matlab-48.png" title="Matlab">
+            <img src="assets/icons/icons8-excel-48.png" title="Excel">
+            <img src="assets/icons/icons8-github-48.png" title="Github">
+            <img src="assets/icons/icons8-r-project-48.png" title="R">
+            <img src="assets/icons/Autocad-Logo.png" title="AutoCad Electrical">
+        </div>
+    </div>
+
+    <section id="perfil" class="container section-padding">
+        <h2 class="section-title">About me</h2>
+        <div class="profile-grid">
+            <div class="profile-text">
+                <p>I am a curious and pragmatic engineer, highly motivated to understand how systems work and to apply technology to optimize processes. I have Spanish and Argentine citizenship.</p>
+            </div>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>Automation</h3>
+                    <p>PLC Siemens (S7-300/1200/1500), HMI & SCADA Design.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Data</h3>
+                    <p>Python, SQL, Tableau. Google Data Analyst Certified.</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Embedded</h3>
+                    <p>Microcontrolers (C), IoT y systems control.</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <div class="tech-stack-divider">
-        <img src="assets/icons/OIP.jpeg" alt="TIA PORTAL" title="TIA PORTAL" class="tech-icon">
-        <img src="assets/icons/icons8-c-programming-48.png" alt="C" title="C programming" class="tech-icon">
-        <img src="assets/icons/icons8-github-48.png" alt="Github" title="Github" class="tech-icon">
-        <img src="assets/icons/icons8-matlab-48.png" alt="Matlab" title="Matlab" class="tech-icon">
-        <img src="assets/icons/icons8-python-48.png" alt="Python" title="Python" class="tech-icon">
-        <img src="assets/icons/icons8-r-project-48.png" alt="R" title="R" class="tech-icon">
-        <img src="assets/icons/icons8-jupyter-48.png" alt="Jupyter Notebooks" title="Jupyter Notebooks" class="tech-icon">
-        <img src="assets/icons/icons8-sqlite-100.png" alt="SQLite" title="SQLite" class="tech-icon">
-        <img src="assets/icons/icons8-tableau-software-48.png" alt="Tableau" title="Tableau" class="tech-icon">
-    </div>
+    <section id="proyectos" class="container section-padding">
+        <h2 class="section-title">Projects</h2>
 
-    <section id="proyectos" class="container">
-        <h2>Projects</h2>
+        <p> Although I can't show you the automation projects I worked on at my last job, here is a summary of the latest data and programming projects I have been working on.</p>
         
         <div class="filters">
-            <button class="filter-btn active" data-filter="all">ALL</button>
-            <button class="filter-btn" data-filter="data">DATA ANALYSIS / ML</button>
-            <button class="filter-btn" data-filter="Programming">PROGRAMMING</button>
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="data">Data & ML</button>
+            <button class="filter-btn" data-filter="Programming">Programming & IoT</button>
         </div>
 
         <div class="project-grid">
 
             <div class="project-card" data-category="data">
-                <img src="assets/imgs/AgriculturaArgentina.jpg" alt="Imagen de Dashboard en Tableu" class="project-img">
-                <h3>Agriculture in Argentina</h3>
-                <p>
-                    This project presents an analysis based on public government data regarding the planting, 
-                    harvesting, production, and yields of the main grains in Argentina (Corn, Soy, and Wheat). 
-                    The information is sourced from three distinct datasets provided by the official 
-                    Argentine data portal.
-                    You can check <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/AgriculturaArgentina/README_EN.md" target="_blank" class="github-link">GitHub</a> code or
-                    directly the <a href="https://public.tableau.com/shared/W4DGPJW7S?:display_count=n&:origin=viz_share_link" target="_blank" class="github-link">Tableu Public Interface</a>
-                </p>
-                <span class="category-tag">Data</span>
+                <div class="card-image">
+                    <img src="assets/imgs/AgriculturaArgentina.jpg" alt="Dashboard Agricultura">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Data Analysis</span>
+                    <h3>Agriculture in Argentina</h3>
+                    <p>Government dataset analysis of cereal production. Interactive Dashboard in Tableau.</p>
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/AgriculturaArgentina/README_EN.md">GitHub</a>
+                        <a href="https://public.tableau.com/app/profile/valentin.bellini/viz/shared/W4DGPJW7S">Demo</a>
+                    </div>
+                </div>
             </div>
 
             <div class="project-card" data-category="data">
-                <img src="assets/imgs/quickEDA.jpeg" alt="Quick EDA screenshot" class="project-img">
-                <h3>Quick EDA</h3>
-                <p>
-                    QuickEDA is a lightweight automation tool designed to streamline the initial step of data analysis. 
-                    It integrates directly into the Windows Context Menu, 
-                    allowing users to right-click any .csv file and instantly generate a statistical summary and 
-                    health check of the dataset.
-                    You can check the <a href="https://github.com/valentinbellini/QuickAnalysis" target="_blank" class="github-link">GitHub</a> code.
-                </p>
-                <span class="category-tag">Data</span>
+                <div class="card-image">
+                    <img src="assets/imgs/quickEDA.jpeg" alt="Quick EDA Tool">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Automation Tool</span>
+                    <h3>Quick EDA</h3>
+                    <p>Fully integrated Windows automation tool for instant .CSV file reporting</p>  
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/QuickAnalysis">GitHub</a>
+                    </div>
+                </div>
             </div>
 
             <div class="project-card" data-category="data">
-                <img src="assets/imgs/Finance-Dashboard.jpg" alt="Imagen de Dashboard en google sheets" class="project-img">
-                <h3>Finance Portfolio Tracker</h3>
-                <p> 
-                    This project is built in Google Sheets, leveraging Google Finance functions and 
-                    SQL queries for data transformation. It tracks investment operations (stocks, crypto, commodities, etc.) 
-                    and generates a dynamic dashboard for performance monitoring.
-                    You can access to the <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/FinancePortfolioTracker/README.md" target="_blank" class="github-link">GitHub</a> to check the spreadsheet.
-                </p>
-                <span class="category-tag">Data</span>
-            </div>
+                <div class="card-image">
+                    <img src="assets/imgs/postureGuard.jpg" alt="Posture Guard code screen">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">OpenCV, MediaPipe, and Tkinter</span>
+                    <h3>Posture Guard</h3>
+                    <p>Desktop application to help users maintain healthy posture while working by providing automated notifications when bad posture is detected for a prolonged period.</p>  
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/PostureGuard">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
-            <div class="project-card" data-category="Programming">
-                <img src="assets/imgs/ESP32-Arduino.png" alt="Imagen de Alexa-ESP32" class="project-img">
-                <h3> ALEXA-ESP32 </h3>
-                <p> 
-                    This project allows you to control devices using voice commands through Alexa, 
-                    using an Arduino microcontroller (either ESP32 or ESP8266) and the FauxmoESP library.
-                    You can access to the <a href="https://github.com/valentinbellini/Alexa-ESP32" target="_blank" class="github-link">GitHub</a> to check the code.
-                </p>
-                <span class="category-tag">Programming</span>
-            </div>
-            
             <div class="project-card" data-category="data">
-                <img src="assets/imgs/inventarioSQL.jpg" alt="Imagen de Inventario SQL" class="project-img">
-                <h3>SQL Inventory</h3>
-                <p> 
-                    This is a Python project that provides a graphical interface to manage product inventories. 
-                    It allows you to add, modify, delete, and display products stored in an SQLite database.
-                    Here is the link to <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank" class="github-link">GitHub</a> 
-                    but I just want to let you know that the entire description is in Spanish.
-                </p>
-                <span class="category-tag">Data</span>
-            </div>
+                <div class="card-image">
+                    <img src="assets/imgs/Finance-Dashboard.jpg" alt="Finance Tracker">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">Google Sheets & SQL</span>
+                    <h3>Finance Portfolio Tracker</h3>
+                    <p> Dynamic investment tracking using Google Finance and SQL Queries</p>
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/FinancePortfolioTracker/README.md">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="project-card" data-category="Programming">
-                <img src="assets/imgs/debug_h.jpg" alt="Imagen de programacion en microcontrolador" class="project-img">
-                <h3>RS485 with DMA in FRDM-KL46Z</h3>
-                <p> 
-                    Using the Cortex M0+ microcontroller on the FRDM-KL46Z development board in order to establish RS-485 serial 
-                    communication with another device. The system's operation is modeled using the Finite State Machine / UML Statecharts 
-                    formalism. The message exchange between the two devices is implemented using circular queue data structures for 
-                    reception and DMA-handled transactions for transmission. The application was programmed and debugged using 
-                    the MCUXpresso environment and the associated libraries.
-                    Here is the link to <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank" class="github-link">GitHub</a> 
-                </p>
-                <span class="category-tag">Programming</span>
-            </div>
+                <div class="card-image">
+                    <img src="assets/imgs/ESP32-Arduino.png" alt="Alexa ESP32">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">IoT</span>
+                    <h3>ALEXA-ESP32 Control</h3>
+                    <p> Devices voice control with Alexa and microcontrolers ESP32/ESP8266</p>
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/Alexa-ESP32">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card" data-category="data">
+                <div class="card-image">
+                    <img src="assets/imgs/inventarioSQL.jpg" alt="SQL Inventory">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">SQL & Python</span>
+                    <h3>SQL Inventory</h3>
+                    <p> Graphical interface to manage product inventories. It allows you to add, modify, delete, and display products stored in an SQLite database. </p>
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/InventarioSQL">GitHub</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="project-card" data-category="Programming">
-                <img src="assets/imgs/ControlTheory.jpg" alt="Imagen de control loop" class="project-img">
-                <h3>Control Theory</h3>
-                <p> 
-                    This repository gathers a collection of practical assignments from university courses 
-                    related to Control Systems, System Dynamics, and Signal Analysis using MatLab and Modelica for
-                    design, tunning and report several control systems.
-                    Here is the link to <a href="https://github.com/valentinbellini/Simulacion-Sistemas-Fisicos" target="_blank" class="github-link">GitHub</a>.
-                </p>
-                <span class="category-tag">Programming</span>
-            </div>
-   
+                <div class="card-image">
+                    <img src="assets/imgs//debug_h.jpg" alt="Code Debugger image">
+                </div>
+                <div class="card-content">
+                    <span class="category-tag">C Programming</span>
+                    <h3>RS485 with DMA in FRDM-KL46Z</h3>
+                    <p> Using the Cortex M0+ microcontroller on the FRDM-KL46Z development board in order to establish RS-485 serial communication with another device. </p>
+                    <div class="card-links">
+                        <a href="https://github.com/valentinbellini/Sistemas-Embebidos/tree/main/Sistemas%20Digitales%20II/TrabajosPracticos/MKL43Z_SD2_TP3_UART_DMA">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
         </div>
 
     </section>
+
     <footer>
-        <p>© 2025 Valentin Bellini | Code & Automation</p>
+        <p>© 2025 Valentin Bellini - vbellini.es@gmail.com</p>
     </footer>
 
     <script src="script.js"></script>
