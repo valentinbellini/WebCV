@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="es" data-theme="light">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Valentin Bellini | Electronic Engineer</title>
+    <title>Valentin Bellini | Automation Engineer & Data Analyst</title>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,9 +19,10 @@
             <a href="#" class="logo">VB.</a>
             <div class="nav-links">
                 <a href="#perfil">Profile</a>
+                <a href="#education">Education</a>
                 <a href="#proyectos">Projects</a>
                 <a href="assets/CV.pdf" target="_blank" download class="btn-primary">Download CV</a>
-                <button id="theme-toggle" class="theme-btn" aria-label="Cambiar tema">
+                <button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
@@ -31,11 +32,14 @@
     <header class="hero">
         <div class="container hero-content">
             <span class="greeting">Hi, I am Valentin Bellini</span>
-            <h1>Electronic Engineer <br>& Data Analyst</h1>
+            <h1>Automation Engineer <br>& Data Analyst</h1>
             <p>
-                With experience in industrial automation (PLC), embedded systems programming, and data analytics. 
-                Based in Switzerland and fully available to relocate.
-                I speak Spanish and English. Now sutdying Italian.
+                Bridging the gap between Industrial Automation (PLC) and Data Analytics. 
+                <strong>EU Citizen (Spain)</strong> based in Lugano, Switzerland. 
+                Open to relocation and willing to learn German or any other Language.
+            </p>
+            <p class="languages">
+                <i class="fas fa-globe"></i> English (Fluent) | Spanish (Native) | Italian (A1 - Learning)
             </p>
             <div class="social-links">
                 <a href="https://www.linkedin.com/in/valentinbellini/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
@@ -47,51 +51,115 @@
     <div class="tech-stack-container">
         <p class="stack-title">Tech stack</p>
         <div class="tech-icons">
-            <img src="assets/icons/OIP.jpeg" title="TIA Portal">
+            <img src="assets/icons/OIP.jpeg" title="Siemens TIA Portal">
             <img src="assets/icons/icons8-python-48.png" title="Python">
             <img src="assets/icons/icons8-c-programming-48.png" title="C/C++">
-            <img src="assets/icons/icons8-sqlite-100.png" title="SQL"> 
+            <img src="assets/icons/icons8-sqlite-100.png" title="SQL / SQLite"> 
             <img src="assets/icons/icons8-tableau-software-48.png" title="Tableau">
-            <img src="assets/icons/icons8-matlab-48.png" title="Matlab">
-            <img src="assets/icons/icons8-excel-48.png" title="Excel">
-            <img src="assets/icons/icons8-github-48.png" title="Github">
-            <img src="assets/icons/icons8-r-project-48.png" title="R">
+            <img src="assets/icons/icons8-matlab-48.png" title="Matlab / Simulink">
+            <img src="assets/icons/icons8-excel-48.png" title="Advanced Excel">
+            <img src="assets/icons/icons8-github-48.png" title="Git / GitHub">
+            <img src="assets/icons/icons8-r-project-48.png" title="R Language">
             <img src="assets/icons/Autocad-Logo.png" title="AutoCad Electrical">
         </div>
     </div>
 
     <section id="perfil" class="container section-padding">
-        <h2 class="section-title">About me</h2>
+        <h2 class="section-title">Professional Profile</h2>
         <div class="profile-grid">
             <div class="profile-text">
-                <p>I am a curious and pragmatic engineer, highly motivated to understand how systems work and to apply technology to optimize processes. I have Spanish and Argentine citizenship.</p>
+                <p>
+                    I am a pragmatic engineer focused on <strong>optimizing industrial processes</strong> through technology. 
+                    My unique value lies in combining hardware control (PLC/Embedded) with data-driven insights.
+                </p>
             </div>
             <div class="stats-grid">
                 <div class="stat-card">
-                    <h3>Industrial Automation</h3>
-                    <p> Hands-on experience in PLC Siemens (S7-300/1200/1500) programming using TIA Portal, HMI & SCADA Design, VFD Comissioning.</p>
+                    <h3><i class="fas fa-robot"></i> Industrial Automation</h3>
+                    <p>+2 years specializing in Siemens PLCs (S7-300/1200/1500) via TIA Portal. Expertise in HMI/SCADA design and VFD Commissioning for production lines.</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Data</h3>
-                    <p>Confident with Python, SQL, Tableau and Excel. Basic knowledge of ML. Google Data Analyst Certified and currently in the Mayerfeld Practicum Program.</p>
+                    <h3><i class="fas fa-chart-line"></i> Data Analytics</h3>
+                    <p>Google Data Analytics Certified. Skilled in extracting insights using Python (Pandas), SQL, and Tableau. Currently upskilling via the Mayerfeld Practicum Program.</p>
                 </div>
                 <div class="stat-card">
-                    <h3>Embedded</h3>
-                    <p>Experience in low code programming for Cortex M0+ microcontrollers (C/C++), IOT and control theory.</p>
+                    <h3><i class="fas fa-microchip"></i> Embedded Systems</h3>
+                    <p>Low-level programming for Cortex M0+ microcontrollers (C/C++), IoT sensor integration, and Control Theory application.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="proyectos" class="container section-padding">
-        <h2 class="section-title">Projects</h2>
+<section id="education" class="container section-padding">
+        <h2 class="section-title">Education & Certifications</h2>
+        
+        <div class="resume-list">
 
-        <p> Although I can't show you the automation projects I worked on at my last job, here is a summary of the latest data and programming projects I have been working on.</p>
+            <div class="resume-item">
+                <div class="resume-date">Present</div>
+                <div class="resume-content">
+                    <h3>Data Analytics Practicum</h3>
+                    <span class="resume-institution">Mayerfeld Institute</span>
+                    <p>Intensive program simulating real-world business intelligence tasks, focusing on A/B testing and conversion rate optimization.</p>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2019 - 2025</div>
+                <div class="resume-content">
+                    <h3>Electronic Engineer Degree</h3>
+                    <span class="resume-institution">Universidad Nacional de Rosario (UNR)</span>
+                    <p>6-year program equivalent to M.Sc. <br>
+                    <strong>Final Project:</strong> Complete automation design for an <strong>R600 (Isobutane) gas unloading plant</strong>. The project involved safety interlocks, process control, and sensor selection for hazardous environments.</p>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2025</div>
+                <div class="resume-content">
+                    <h3>Google Data Analytics Certificate</h3>
+                    <span class="resume-institution">Coursera - Google</span>
+                    <p>Comprehensive training covering the full data analysis lifecycle (Ask, Prepare, Process, Analyze, Share, Act). Practical application of SQL, R programming, and Tableau.</p>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2024</div>
+                <div class="resume-content">
+                    <h3>Advanced PLC Programming</h3>
+                    <span class="resume-institution">Universidad Nacional de Rosario</span>
+                    <p>Development of complex control structures using <strong>Ladder Logic (LAD)</strong> for boolean operations and <strong>GRAFCET (SFC)</strong> for sequential process management.</p>
+                </div>
+            </div>
+
+            <div class="resume-item">
+                <div class="resume-date">2022 - 2024</div>
+                <div class="resume-content">
+                    <h3>CCNA Routing & Switching Curriculum</h3>
+                    <span class="resume-institution">Cisco Networking Academy</span>
+                    <ul class="resume-sublist">
+                        <li><strong>2024:</strong> Enterprise Networking, Security, and Automation</li>
+                        <li><strong>2023:</strong> Switching, Routing, and Wireless Essentials</li>
+                        <li><strong>2022:</strong> Introduction to Networks</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="proyectos" class="container section-padding">
+        <h2 class="section-title">Selected Projects</h2>
+
+        <p class="project-intro"> 
+            Due to NDA restrictions, commercial automation projects cannot be displayed. 
+            Below is a selection of personal projects demonstrating my coding and analytical capabilities.
+        </p>
         
         <div class="filters">
             <button class="filter-btn active" data-filter="all">All</button>
             <button class="filter-btn" data-filter="data">Data & ML</button>
-            <button class="filter-btn" data-filter="Programming">Programming & IoT</button>
+            <button class="filter-btn" data-filter="Programming">Engineering & IoT</button>
         </div>
 
         <div class="project-grid">
@@ -101,12 +169,12 @@
                     <img src="assets/imgs/AgriculturaArgentina.jpg" alt="Dashboard Agricultura">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">Data Analysis</span>
+                    <span class="category-tag">Data Analysis | Tableau</span>
                     <h3>Agriculture in Argentina</h3>
-                    <p>Government dataset analysis of cereal production. Interactive Dashboard in Tableau.</p>
+                    <p>ETL process and visualization of cereal production using government datasets. Features an interactive Tableau Dashboard for yield analysis.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/AgriculturaArgentina/README_EN.md" target="_blank">GitHub</a>
-                        <a href="https://public.tableau.com/app/profile/valentin.bellini/viz/shared/W4DGPJW7S" target="_blank">Demo</a>
+                        <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/AgriculturaArgentina/README_EN.md" target="_blank">View Code</a>
+                        <a href="https://public.tableau.com/app/profile/valentin.bellini/viz/shared/W4DGPJW7S" target="_blank">Live Demo</a>
                     </div>
                 </div>
             </div>
@@ -116,11 +184,11 @@
                     <img src="assets/imgs/quickEDA.jpeg" alt="Quick EDA Tool">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">Automation Tool</span>
-                    <h3>Quick EDA</h3>
-                    <p>Fully integrated Windows automation tool for instant .CSV file reporting</p>  
+                    <span class="category-tag">Python | Automation</span>
+                    <h3>Quick EDA Tool</h3>
+                    <p>Windows Context Menu integration for instant Data Analysis. Generates statistical reports from any .CSV file with a single right-click.</p>  
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/QuickAnalysis" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/QuickAnalysis" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -130,11 +198,11 @@
                     <img src="assets/imgs/postureGuard.jpg" alt="Posture Guard code screen">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">OpenCV, MediaPipe, and Tkinter</span>
+                    <span class="category-tag">Computer Vision | OpenCV</span>
                     <h3>Posture Guard</h3>
-                    <p>Desktop application to help users maintain healthy posture while working by providing automated notifications when bad posture is detected for a prolonged period.</p>  
+                    <p>Real-time desktop application monitoring user posture via webcam (MediaPipe). Alerts the user to prevent ergonomic injuries.</p>  
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/PostureGuard" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/PostureGuard" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -144,11 +212,11 @@
                     <img src="assets/imgs/Finance-Dashboard.jpg" alt="Finance Tracker">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">Google Sheets & SQL</span>
+                    <span class="category-tag">FinTech | SQL</span>
                     <h3>Finance Portfolio Tracker</h3>
-                    <p> Dynamic investment tracking using Google Finance and SQL Queries</p>
+                    <p>Automated investment tracking system leveraging Google Finance API and SQL queries for real-time asset performance monitoring.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/FinancePortfolioTracker/README.md" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/Data-Analyst/blob/main/FinancePortfolioTracker/README.md" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
@@ -158,11 +226,11 @@
                     <img src="assets/imgs/ESP32-Arduino.png" alt="Alexa ESP32">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">IoT</span>
-                    <h3>ALEXA-ESP32 Control</h3>
-                    <p> Devices voice control with Alexa and microcontrollers ESP32/ESP8266</p>
+                    <span class="category-tag">IoT | C++</span>
+                    <h3>Voice Control with Alexa</h3>
+                    <p>Integration of ESP32/ESP8266 microcontrollers with Amazon Alexa for voice-activated home automation systems.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/Alexa-ESP32" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/Alexa-ESP32" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -172,11 +240,11 @@
                     <img src="assets/imgs/Traffic-lights.jpeg" alt="Traffic-lights control chart">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">Python</span>
-                    <h3>Adaptative traffic light control</h3>
-                    <p> Jupyter notebook repository (in Spanish) showing a the implementation of a time adaptative control for traffic lights compared the fixed-time standard in order to be more efficent.</p>
+                    <span class="category-tag">Simulation | Python</span>
+                    <h3>Adaptive Traffic Control</h3>
+                    <p>Comparative simulation of fixed-time vs. adaptive algorithms for traffic light optimization to reduce congestion metrics.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/Traffic-Light/blob/main/Traffic-Lights.ipynb" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/Traffic-Light/blob/main/Traffic-Lights.ipynb" target="_blank">Jupyter Notebook</a>
                     </div>
                 </div>
             </div>
@@ -186,11 +254,11 @@
                     <img src="assets/imgs/inventarioSQL.jpg" alt="SQL Inventory">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">SQL & Python</span>
-                    <h3>SQL Inventory</h3>
-                    <p> Graphical interface to manage product inventories. It allows you to add, modify, delete, and display products stored in an SQLite database. </p>
+                    <span class="category-tag">GUI | SQLite</span>
+                    <h3>SQL Inventory Manager</h3>
+                    <p>Full CRUD application with a graphical interface (Tkinter) for efficient product management and database interaction.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/InventarioSQL" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -200,11 +268,11 @@
                     <img src="assets/imgs//debug_h.jpg" alt="Code Debugger image">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">C Programming</span>
-                    <h3>RS485 with DMA in FRDM-KL46Z</h3>
-                    <p> Using the Cortex M0+ microcontroller on the FRDM-KL46Z development board in order to establish RS-485 serial communication with another device. </p>
+                    <span class="category-tag">Embedded C | DMA</span>
+                    <h3>RS485 Communication</h3>
+                    <p>Implementation of RS-485 serial protocol using Direct Memory Access (DMA) on a Cortex M0+ (FRDM-KL46Z) for high-efficiency data transfer.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/Sistemas-Embebidos/tree/main/Sistemas%20Digitales%20II/TrabajosPracticos/MKL43Z_SD2_TP3_UART_DMA" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/Sistemas-Embebidos/tree/main/Sistemas%20Digitales%20II/TrabajosPracticos/MKL43Z_SD2_TP3_UART_DMA" target="_blank">View Code</a>
                     </div>
                 </div>
             </div>
@@ -214,11 +282,11 @@
                     <img src="assets/imgs/controlTheory.jpeg" alt="Control Theory image">
                 </div>
                 <div class="card-content">
-                    <span class="category-tag">Matlab</span>
-                    <h3>Control Theory in several systems</h3>
-                    <p> Controller design in the discrete, time and frequency domains using  Matlab. This repository is a copy of my University notes and assignments. </p>
+                    <span class="category-tag">Matlab | Engineering</span>
+                    <h3>Control Systems Library</h3>
+                    <p>Collection of algorithms for discrete, time, and frequency domain analysis. Includes PID tuning and system stability modeling.</p>
                     <div class="card-links">
-                        <a href="https://github.com/valentinbellini/Simulacion-Sistemas-Fisicos/tree/main/Teoria%20de%20Control" target="_blank">GitHub</a>
+                        <a href="https://github.com/valentinbellini/Simulacion-Sistemas-Fisicos/tree/main/Teoria%20de%20Control" target="_blank">View Repository</a>
                     </div>
                 </div>
             </div>
@@ -227,8 +295,11 @@
 
     </section>
 
+    
+
+
     <footer>
-        <p>© 2025 Valentin Bellini - vbellini.es@gmail.com</p>
+        <p>© 2025 Valentin Bellini | <a href="mailto:vbellini.es@gmail.com" style="color: inherit;">vbellini.es@gmail.com</a></p>
     </footer>
 
     <script src="script.js"></script>
