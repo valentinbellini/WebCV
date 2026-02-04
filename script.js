@@ -63,4 +63,28 @@ document.addEventListener('DOMContentLoaded', () => {
             icon.classList.add('fa-moon'); // Mostrar luna para cambiar a oscuro
         }
     }
+
+    // --- MENÚ HAMBURGUESA ---
+    const menuToggle = document.querySelector('#mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    // 1. Abrir / Cerrar menú al tocar el icono
+    menuToggle.addEventListener('click', () => {
+        menuToggle.classList.toggle('is-active'); // Anima el icono
+        navLinks.classList.toggle('active');      // Desliza el menú
+    });
+
+    // 2. Cerrar el menú automáticamente al hacer clic en un enlace
+    // (Mejora UX: el usuario elige "Projects" y el menú se quita solo)
+    const navItems = document.querySelectorAll('.nav-links a');
+    
+    navItems.forEach(item => {
+        item.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+                menuToggle.classList.remove('is-active');
+            }
+        });
+    });
+
 });

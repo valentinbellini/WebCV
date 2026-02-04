@@ -3,24 +3,24 @@
    ========================================= */
 :root {
     /* Variables Base (Modo Claro por defecto) */
-    --bg-body: #f8f9fa;       /* Gris muy claro, casi blanco */
-    --bg-card: #ffffff;       /* Blanco puro */
-    --text-main: #1e293b;     /* Gris oscuro (Slate 800) */
-    --text-muted: #64748b;    /* Gris medio */
+    --bg-body: #f8f9fa;       
+    --bg-card: #ffffff;       
+    --text-main: #1e293b;     
+    --text-muted: #64748b;    
     --primary: #2563eb;       /* Azul Real Profesional */
     --primary-hover: #1d4ed8;
     --border-color: #e2e8f0;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-    --hero-bg: #eff6ff;       /* Azul muy pálido para el header */
+    --hero-bg: #eff6ff;       
 }
 
 /* Variables Modo Oscuro */
 [data-theme="dark"] {
-    --bg-body: #0f172a;       /* Slate 900 (Azul oscuro profundo) */
-    --bg-card: #1e293b;       /* Slate 800 */
-    --text-main: #f1f5f9;     /* Blanco grisáceo */
-    --text-muted: #94a3b8;    /* Gris azulado */
-    --primary: #60a5fa;       /* Azul más claro y brillante para fondo oscuro */
+    --bg-body: #0f172a;       
+    --bg-card: #1e293b;       
+    --text-main: #f1f5f9;     
+    --text-muted: #94a3b8;    
+    --primary: #60a5fa;       
     --primary-hover: #93c5fd;
     --border-color: #334155;
     --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.5);
@@ -64,7 +64,6 @@ img { max-width: 100%; display: block; }
     color: var(--text-main);
 }
 
-/* Pequeña línea debajo del título */
 .section-title::after {
     content: '';
     display: block;
@@ -208,13 +207,13 @@ img { max-width: 100%; display: block; }
 
 .tech-icons img {
     height: 40px;
-    filter: grayscale(100%); /* Efecto elegante: blanco y negro */
+    filter: grayscale(100%);
     opacity: 0.7;
     transition: all 0.3s;
 }
 
 .tech-icons img:hover {
-    filter: grayscale(0%); /* Color al pasar el mouse */
+    filter: grayscale(0%);
     opacity: 1;
     transform: scale(1.1);
 }
@@ -263,7 +262,7 @@ img { max-width: 100%; display: block; }
     border: 1px solid var(--border-color);
     color: var(--text-muted);
     padding: 8px 20px;
-    border-radius: 50px; /* Botones redondos tipo "pill" */
+    border-radius: 50px;
     cursor: pointer;
     font-weight: 500;
     transition: all 0.3s;
@@ -306,7 +305,7 @@ img { max-width: 100%; display: block; }
 .card-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* CLAVE: La imagen llena el espacio sin deformarse */
+    object-fit: cover;
     transition: transform 0.5s;
 }
 
@@ -316,7 +315,7 @@ img { max-width: 100%; display: block; }
 
 .card-content {
     padding: 20px;
-    flex-grow: 1; /* Empuja el footer de la card hacia abajo si falta contenido */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
 }
@@ -351,7 +350,6 @@ img { max-width: 100%; display: block; }
 
 .card-links a:hover { text-decoration: underline; }
 
-/* Ocultar proyectos filtrados */
 .hidden { display: none; }
 
 /* =========================================
@@ -363,30 +361,30 @@ img { max-width: 100%; display: block; }
     background: var(--bg-card);
     border-radius: 12px;
     border: 1px solid var(--border-color);
-    padding: 10px 30px; /* Espacio interno */
+    padding: 10px 30px;
     box-shadow: var(--shadow);
 }
 
 .resume-item {
-    display: flex; /* Pone fecha y contenido lado a lado */
+    display: flex;
     padding: 25px 0;
     border-bottom: 1px solid var(--border-color);
 }
 
 .resume-item:last-child {
-    border-bottom: none; /* Quita la línea del último item */
+    border-bottom: none;
 }
 
 .resume-date {
-    flex: 0 0 140px; /* Ancho fijo para la fecha */
+    flex: 0 0 140px;
     font-weight: 700;
     color: var(--primary);
     font-size: 0.95rem;
-    padding-top: 2px; /* Alineación visual con el título */
+    padding-top: 2px;
 }
 
 .resume-content {
-    flex: 1; /* Ocupa el resto del espacio */
+    flex: 1;
 }
 
 .resume-content h3 {
@@ -432,18 +430,7 @@ img { max-width: 100%; display: block; }
     font-weight: bold;
 }
 
-/* Responsive para Móviles */
-@media (max-width: 700px) {
-    .resume-item {
-        flex-direction: column; /* Apila fecha arriba del contenido */
-    }
-    .resume-date {
-        margin-bottom: 5px;
-        font-size: 0.85rem;
-        opacity: 0.8;
-    }
-}
-
+/* NOTA: He eliminado el bloque @media que estaba aquí en medio y causaba conflictos */
 
 /* =========================================
    FOOTER
@@ -457,11 +444,96 @@ footer {
     margin-top: 60px;
 }
 
+
 /* =========================================
-   RESPONSIVE
+   ESTILOS DEL MENÚ HAMBURGUESA
+   ========================================= */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--text-main);
+}
+
+/* =========================================
+   RESPONSIVE FINAL (TODO UNIFICADO AQUÍ)
    ========================================= */
 @media (max-width: 768px) {
-    .nav-content { flex-direction: column; gap: 15px; }
-    .hero h1 { font-size: 2.5rem; }
-    .project-grid { grid-template-columns: 1fr; }
+    
+    /* 1. Navbar Mobile */
+    .nav-content {
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+
+    .menu-toggle { display: block; }
+
+    .menu-toggle.is-active .bar:nth-child(2) { opacity: 0; }
+    .menu-toggle.is-active .bar:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    .menu-toggle.is-active .bar:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .nav-links {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: var(--bg-card);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 10px rgba(0,0,0,0.1);
+        border-bottom: 1px solid var(--border-color);
+        padding-bottom: 20px;
+    }
+
+    .nav-links.active { left: 0; }
+
+    .nav-links a {
+        padding: 20px 0;
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .btn-primary {
+        width: 80%;
+        margin: 20px auto 0;
+        display: inline-block;
+    }
+
+    .theme-btn { margin: 20px auto; }
+
+    /* 2. Ajustes de Educación (Móvil) - DISEÑO PASTILLA */
+    .resume-item { 
+        flex-direction: column; 
+        align-items: flex-start;
+    }
+    
+    .resume-date { 
+        margin-bottom: 8px; 
+        width: auto; /* IMPORTANTE: Que no ocupe todo el ancho */
+        
+        /* Quitamos el borde izquierdo que causaba la línea fea */
+        border-left: none; 
+        padding-left: 0;
+        
+        /* Nuevo diseño tipo Etiqueta suave */
+        color: var(--primary);
+        font-size: 0.85rem;
+        background: rgba(37, 99, 235, 0.1); /* Fondo azul muy suave */
+        padding: 4px 10px;
+        border-radius: 4px;
+    }
+
+    /* 3. Ajustes Generales */
+    .hero h1 { font-size: 2rem; }
+    .section-padding { padding: 40px 0; }
 }
